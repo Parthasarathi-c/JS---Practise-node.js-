@@ -10,4 +10,4 @@ const task1 = new Promise(task);
 const task2 = new Promise(task);
 const task3 = new Promise(task);
 
-Promise.all([task1,task2,task3]).then((a)=>console.log(a)).catch((a)=>console.log(a));
+Promise.all([task1,task2,task3]).then((a)=>console.log(`${a} is running`)).catch((a)=>console.log(`${a} is not running`));
