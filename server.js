@@ -8,9 +8,9 @@ function required(req,res)
 }
 
 const created = obj.createServer( required ); 
-
-created.listen(port , (e) => {
- if(e)   console.log("ERROR OCCURED"); 
- console.log("RUNNING CORRECTLY");  
+function forLis(e) 
+{
+    if(e)   console.log("ERROR OCCURED"); 
+    console.log("RUNNING CORRECTLY");  
 }
-);
+created.listen(port , forLis);
